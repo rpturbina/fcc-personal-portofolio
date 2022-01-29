@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <!-- <nav id="navbar" class="navbar">
+        <nav id="navbar" class="navbar">
             <ul class="nav-list">
                 <li>
                     <a href="#welcome-section" class="nav-link">About</a>
@@ -20,8 +20,8 @@
                     <a href="#contacts" class="nav-link">Contact</a>
                 </li>
             </ul>
-        </nav> -->
-        <!-- <section id="welcome-section" class="section hero">
+        </nav>
+        <section id="welcome-section" class="section hero">
             <h1 class="hero__intro">
                 Hi <span class="hero__emoji">👋</span> there, my name is
             </h1>
@@ -32,7 +32,7 @@
                 currently learning about
                 <strong>frontend web development.</strong>
             </p>
-        </section> -->
+        </section>
         <section id="projects" class="section projects">
             <h2 class="project__header">Things I've built</h2>
             <div class="project-tile">
@@ -41,17 +41,25 @@
                         <a
                             href="https://rpturbina.github.io/fcc-tribute-page"
                             class="project__name"
+                            target="_blank"
                             >Tribute Page - B. J. Habibie</a
                         >
                     </h3>
                     <p class="project__desc">
                         I built this page for tribute and sharing about B. J.
-                        Habibie's life timeline.
+                        Habibie's life timeline and to complete the freeCodeCamp
+                        course about Responsive Web Design.
                     </p>
+                    <ul class="project__stack">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>VS Code</li>
+                    </ul>
                     <div class="link__container">
                         <a
                             href="https://rpturbina.github.io/fcc-tribute-page"
                             class="project-link"
+                            target="_blank"
                         >
                             <img
                                 class="link__icon"
@@ -62,6 +70,7 @@
                         <a
                             href="https://github.com/rpturbina/fcc-tribute-page"
                             class="project-link"
+                            target="_blank"
                         >
                             <img
                                 class="link__icon"
@@ -79,8 +88,114 @@
                     />
                 </div>
             </div>
+            <div class="project-tile">
+                <div class="project__text">
+                    <h3 class="project__name">
+                        <a
+                            href="https://rpturbina.github.io/fcc-tribute-page"
+                            class="project__name"
+                            target="_blank"
+                            >Survey Form - freeCodeCamp</a
+                        >
+                    </h3>
+                    <p class="project__desc">
+                        I built this survey form for completing the freeCodeCamp
+                        course about Responsive Web Design.
+                    </p>
+                    <ul class="project__stack">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>VS Code</li>
+                    </ul>
+                    <div class="link__container">
+                        <a
+                            href="https://rpturbina.github.io/fcc-survey-form"
+                            class="project-link"
+                            target="_blank"
+                        >
+                            <img
+                                class="link__icon"
+                                src="assets/img/internet-lightgray.svg"
+                                alt="Demo Link"
+                            />
+                        </a>
+                        <a
+                            href="https://github.com/rpturbina/fcc-survey-form"
+                            class="project-link"
+                            target="_blank"
+                        >
+                            <img
+                                class="link__icon"
+                                src="assets/img/github-icon-lightgray.svg"
+                                alt="Github Repository Link"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <div class="project__overlay">
+                    <img
+                        class="project-image"
+                        src="assets/img/freeCodeCamp-Survey-Form.png"
+                        alt="Tribute Page BJ Habibie Image"
+                    />
+                </div>
+            </div>
+            <div class="project-tile">
+                <div class="project__text">
+                    <h3 class="project__name">
+                        <a
+                            href="https://rpturbina.github.io/fcc-technical-doc/"
+                            class="project__name"
+                            target="_blank"
+                            >JavaScript Documentation Page</a
+                        >
+                    </h3>
+                    <p class="project__desc">
+                        I built this technical documentation page for completing
+                        the freeCodeCamp course about Responsive Web Design.
+                    </p>
+                    <ul class="project__stack">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>VS Code</li>
+                    </ul>
+                    <div class="link__container">
+                        <a
+                            href="https://rpturbina.github.io/fcc-technical-doc/"
+                            class="project-link"
+                            target="_blank"
+                        >
+                            <img
+                                class="link__icon"
+                                src="assets/img/internet-lightgray.svg"
+                                alt="Demo Link"
+                            />
+                        </a>
+                        <a
+                            href="https://github.com/rpturbina/fcc-technical-doc/"
+                            class="project-link"
+                            target="_blank"
+                        >
+                            <img
+                                class="link__icon"
+                                src="assets/img/github-icon-lightgray.svg"
+                                alt="Github Repository Link"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <div class="project__overlay">
+                    <img
+                        class="project-image"
+                        src="assets/img/freeCodeCamp-JavaScript-Documentation.png"
+                        alt="Tribute Page BJ Habibie Image"
+                    />
+                </div>
+            </div>
         </section>
-        <!-- <section id="contacts" class="section contacts">
+        <section id="contacts" class="section contacts">
             <a
                 href="https://github.com/rpturbina"
                 id="profile-link"
@@ -104,10 +219,16 @@
                     alt="FreeCodeCamp Icon"
             /></a>
             <a href="mailto:rizki.pratama.turbina@gmail.com">Email</a>
-        </section> -->
+        </section>
         <footer class="footer">
-            <p class="footer__desc">Made with 🤍 by rpturbina © 2022</p>
+            <p class="footer__desc">
+                Made with 🤍 by
+                <a class="footer__link" href="https://rpturbina.github.io/"
+                    >rpturbina</a
+                >
+                © 2022
+            </p>
         </footer>
     </body>
-    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
