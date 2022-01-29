@@ -36,15 +36,16 @@ html {
 
 /* Navbar Style */
 .navbar {
-    position: fixed;
-    width: 100%;
+    position: sticky;
+    top: 0;
     z-index: 100;
-    display: none;
+    background-color: var(--clr-black);
 }
 
 .nav-list {
-    padding: 20px 20px;
-    background-color: var(--clr-darkgray);
+    /* padding: 20px 20px; */
+    border-bottom: 2px solid var(--clr-gray);
+    background-color: var(--clr-black);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -52,13 +53,15 @@ html {
 }
 
 .nav-link {
-    min-width: 20vw;
+    font-weight: 500;
+    min-width: calc(75vw / 3);
+    max-width: calc(90vw / 3);
     text-decoration: none;
     display: inline-block;
     text-align: center;
-    padding: 10px 20px;
+    padding: 20px 20px;
     color: var(--clr-lightgray);
-    opacity: 0.5;
+    opacity: 0.7;
     font-size: 1.5rem;
     transition: all 0.3s ease;
 }
@@ -66,6 +69,7 @@ html {
 .nav-link:hover {
     opacity: 1;
     background-color: var(--clr-darkgray);
+    color: var(--clr-yellow);
 }
 
 /* Section Style */
@@ -113,7 +117,7 @@ html {
 
 /* Work Style */
 .projects {
-    padding-block: 3rem;
+    padding-block: 6rem;
     /* display: none; */
 }
 
@@ -305,6 +309,12 @@ html {
 
 /* Responsive */
 @media (min-width: 425px) {
+    /* Navbar Style */
+
+    .nav-list {
+        margin-inline: 5rem;
+    }
+
     /* Section Style */
 
     .section {
@@ -349,6 +359,10 @@ html {
 }
 
 @media (min-width: 768px) {
+    /* Navbar Style */
+    .nav-link {
+        font-size: 2rem;
+    }
     /* Hero Style */
     .hero__intro {
         font-size: 2.4rem;
@@ -416,6 +430,10 @@ html {
 }
 
 @media (min-width: 1024px) {
+    .nav-list {
+        margin-inline: 10rem;
+    }
+
     .section {
         padding-inline: 10rem;
     }
@@ -423,13 +441,12 @@ html {
     .project__grid {
         gap: 3rem 3rem;
     }
-
-    /* .project-tile {
-        flex: 1;
-    } */
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
+    .nav-list {
+        margin-inline: 15rem;
+    }
     .section {
         padding-inline: 15rem;
     }
