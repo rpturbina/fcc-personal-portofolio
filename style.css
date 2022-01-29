@@ -40,6 +40,7 @@ html {
     top: 0;
     z-index: 100;
     background-color: var(--clr-black);
+    transition: all 0.3s ease;
 }
 
 .nav-list {
@@ -117,8 +118,7 @@ html {
 
 /* Work Style */
 .projects {
-    padding-block: 6rem;
-    /* display: none; */
+    padding-block: 1rem;
 }
 
 .project__header {
