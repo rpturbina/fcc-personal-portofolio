@@ -34,14 +34,12 @@ html {
     font-size: 10px;
 }
 
-body {
-}
 /* Navbar Style */
 .navbar {
     position: fixed;
-    /* top: 0; */
     width: 100%;
     z-index: 100;
+    display: none;
 }
 
 .nav-list {
@@ -61,7 +59,7 @@ body {
     padding: 10px 20px;
     color: var(--clr-lightgray);
     opacity: 0.5;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     transition: all 0.3s ease;
 }
 
@@ -69,6 +67,7 @@ body {
     opacity: 1;
     background-color: var(--clr-darkgray);
 }
+
 /* Section Style */
 .section {
     color: var(--clr-lightgray);
@@ -82,6 +81,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* display: none; */
 }
 
 .hero__intro {
@@ -96,6 +96,7 @@ body {
 .hero__myname {
     font-size: 3.2rem;
     margin: 0.5rem 0;
+    color: var(--clr-yellow);
 }
 
 .hero__about {
@@ -111,9 +112,12 @@ body {
 
 /* Work Style */
 .projects {
-    padding-bottom: 3rem;
+    padding-block: 3rem;
+    /* display: none; */
 }
+
 .project__header {
+    color: var(--clr-yellow);
     padding-block: 3rem;
     display: flex;
     align-items: center;
@@ -121,6 +125,7 @@ body {
     font-size: 2.4rem;
     white-space: nowrap;
 }
+
 .project__header::after {
     content: "";
     height: 1.5px;
@@ -131,8 +136,8 @@ body {
 .project-tile {
     position: relative;
     box-shadow: 0 10px 20px 0px var(--clr-black);
-    min-width: 350px;
-    min-height: 350px;
+    min-width: 300px;
+    min-height: 300px;
     margin-bottom: 40px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -207,6 +212,7 @@ body {
 .project__overlay {
     position: relative;
 }
+
 .project__overlay::after {
     content: "";
     background-color: var(--clr-darkgray);
@@ -224,13 +230,47 @@ body {
 }
 
 /* Contact Style */
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+    min-height: 50vh;
+    padding-block: 3rem;
+}
+
+.contacts__header {
+    font-size: 2.4rem;
+    color: var(--clr-yellow);
+}
+
+.contacts__desc {
+    margin: 0 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.contacts__profile {
+    display: flex;
+    column-gap: 2rem;
+}
+
 .profile-link {
+    height: 25px;
+    display: block;
     opacity: 0.5;
     transition: opacity 0.3s ease;
 }
 
 .profile-link:hover {
     opacity: 1;
+}
+
+.contacts__icon {
+    height: 100%;
+    width: auto;
 }
 
 /* Footer Style */
@@ -242,7 +282,7 @@ body {
 }
 
 .footer__desc {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     opacity: 0.8;
 }
 
@@ -259,13 +299,13 @@ body {
 }
 
 /* Responsive */
-@media (min-width: 481px) {
+@media (min-width: 480px) {
     .section {
-        padding-inline: 4rem;
+        padding-inline: 5rem;
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .section {
         padding-inline: 5rem;
     }
